@@ -1,0 +1,5 @@
+CreateDynamicPickup(1239, 23, 1586.5305,-1694.0198,6.2188, -1);
+	format(strings, sizeof(strings), "[unit patroli sapd]\n{FFFFFF}/unit\nUntuk menggunakan kendaraan patroli");
+	CreateDynamic3DTextLabel(strings, COLOR_LBLUE, 1586.5305,-1694.0198,6.2188, 3.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1); //unitRapsody
+
+//taruh di serverlabels GM kalian
