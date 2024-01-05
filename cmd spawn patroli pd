@@ -1,0 +1,8 @@
+CMD:unit(playerid)
+{
+	if(pData[playerid][pFaction] != 1)
+		return Error(playerid, "Kamu bukan Anggota Sapd");
+	if(!IsPlayerInRangeOfPoint(playerid, 3.0, 1586.5305,-1694.0198,6.2188)) return Error(playerid, "Anda harus berada di checkpoint");
+	ShowPlayerDialog(playerid, DIALOG_PLATEPD, DIALOG_STYLE_LIST, "UNIT PATROLI SAPD", "10 - ADAM 1\n1 - LINCOLN 1", "Select", "Close");
+	return 1;
+}
