@@ -1,0 +1,29 @@
+if(dialogid == DIALOG_PLATEPD)
+	{
+		if(response)
+		{
+			switch(listitem)
+			{
+				case 0:
+				{
+					static
+						vehicleid;
+
+					vehicleid = CreateVehicle(596,1602.0660,-1683.9678,5.6124,90.3080,0,1, 1800, 1);
+
+					SetVehicleNumberPlate(vehicleid, "10 - ADAM 1");
+					SendClientMessage(playerid, -1, "{56A4E4}[INFO] -> {FFFFFF}Kamu berhasil spawn kendaraan Patroli SAPD!!");
+				}
+				case 1:
+				{
+					static
+						vehicleid;
+
+					vehicleid = CreateVehicle(596,1602.0660,-1683.9678,5.6124,90.3080,0,1, 1800, 1);
+						
+					SetVehicleNumberPlate(vehicleid, "1 - LINCOLN 1");
+					SendClientMessage(playerid, -1, "{56A4E4}[INFO] -> {FFFFFF}Kamu berhasil spawn kendaraan Patroli SAPD!!");
+				}
+			}
+		}
+	}
